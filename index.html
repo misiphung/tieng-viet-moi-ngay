@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#faf5ec" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#17120a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fff0f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1f0b16" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Tiếng Việt">
@@ -15,8 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf5ec;--surface:#ffffff;--ink:#2b2010;--muted:#7a6a52;--line:#eadfca;
-  --accent:#9a5b00;--accent-ink:#ffffff;--soft:#fbf0dc;--rouge:#c8352b;
+  --bg:#fff0f6;--surface:#ffffff;--ink:#3d0f26;--muted:#8a5470;--line:#f6cfe0;
+  --accent:#d6337a;--accent-ink:#ffffff;--soft:#ffe0ee;--rouge:#e0287a;
   --ok:#177a52;--okbg:#e2f4ec;--bad:#b92b36;--badbg:#fbe6e8;--tone:#5b3fd1;--tonebg:#ece8fb;
   --display:'Playfair Display',Georgia,'Times New Roman',serif;
   --body:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
@@ -24,15 +24,15 @@
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     color-scheme:dark;
-    --bg:#17120a;--surface:#211a10;--ink:#f6efe3;--muted:#c2b49b;--line:#3a2f1e;
-    --accent:#f0b44c;--accent-ink:#1a1206;--soft:#33270f;--rouge:#ff7a6b;
+    --bg:#1f0b16;--surface:#2b1220;--ink:#ffe8f2;--muted:#e0a6c2;--line:#4a2238;
+    --accent:#ff7eb6;--accent-ink:#2a0716;--soft:#3d1529;--rouge:#ff6fae;
     --ok:#52d6a0;--okbg:#143b30;--bad:#ff8a93;--badbg:#44202a;--tone:#b9a8ff;--tonebg:#2a2350;
   }
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#17120a;--surface:#211a10;--ink:#f6efe3;--muted:#c2b49b;--line:#3a2f1e;
-  --accent:#f0b44c;--accent-ink:#1a1206;--soft:#33270f;--rouge:#ff7a6b;
+  --bg:#1f0b16;--surface:#2b1220;--ink:#ffe8f2;--muted:#e0a6c2;--line:#4a2238;
+  --accent:#ff7eb6;--accent-ink:#2a0716;--soft:#3d1529;--rouge:#ff6fae;
   --ok:#52d6a0;--okbg:#143b30;--bad:#ff8a93;--badbg:#44202a;--tone:#b9a8ff;--tonebg:#2a2350;
 }
 *{box-sizing:border-box}
@@ -170,8 +170,8 @@ nav button{padding:8px 0 6px;border-radius:14px;font-size:12px;min-height:54px}
 nav button svg{width:24px;height:24px}
 nav button[aria-current="page"]{background:var(--soft)}
 h1{font-size:34px}
-.card{border-radius:22px;padding:18px 18px;box-shadow:0 1px 2px rgba(43,32,16,.04),0 6px 18px rgba(43,32,16,.05)}
-.wk{border-radius:22px;padding:18px;box-shadow:0 1px 2px rgba(43,32,16,.04),0 6px 18px rgba(43,32,16,.05)}
+.card{border-radius:22px;padding:18px 18px;box-shadow:0 1px 2px rgba(120,20,70,.04),0 6px 18px rgba(120,20,70,.05)}
+.wk{border-radius:22px;padding:18px;box-shadow:0 1px 2px rgba(120,20,70,.04),0 6px 18px rgba(120,20,70,.05)}
 .btn{min-height:58px;border-radius:18px;font-size:18px;transition:transform .12s,opacity .12s;-webkit-user-select:none;user-select:none}
 .btn:active,.ib:active,nav button:active,.wk:active{transform:scale(.97);opacity:.85}
 .btn:not(.ghost):not(.danger){box-shadow:0 6px 16px color-mix(in srgb,var(--accent) 30%,transparent)}
@@ -193,7 +193,7 @@ main>*{flex-shrink:0}
 .sbody{padding:8px 16px 0;overflow:hidden;min-height:0;gap:0}
 .stage{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:14px;padding:6px 2px 12px;-webkit-overflow-scrolling:touch}
 .dock{flex:none;display:flex;flex-direction:column;gap:10px;padding:10px 2px calc(16px + env(safe-area-inset-bottom))}
-.flip{height:clamp(250px,44dvh,380px);border-radius:26px;-webkit-user-select:none;user-select:none;box-shadow:0 2px 4px rgba(43,32,16,.05),0 12px 28px rgba(43,32,16,.08)}
+.flip{height:clamp(250px,44dvh,380px);border-radius:26px;-webkit-user-select:none;user-select:none;box-shadow:0 2px 4px rgba(120,20,70,.05),0 12px 28px rgba(120,20,70,.08)}
 .face{border-radius:26px;padding:24px 20px;gap:14px}
 .face .w{font-size:38px}
 .face .w.m{font-size:30px}
@@ -207,7 +207,7 @@ main>*{flex-shrink:0}
 .flip.bad .face{border-color:var(--bad);box-shadow:inset 0 0 0 1.5px var(--bad)}
 .fb{border-radius:18px;padding:14px 16px}
 .mic svg{width:24px;height:24px}
-.mic.listening{background:var(--rouge);border-color:var(--rouge);color:#fff;box-shadow:0 6px 18px rgba(200,53,43,.35)}
+.mic.listening{background:var(--rouge);border-color:var(--rouge);color:#fff;box-shadow:0 6px 18px rgba(224,40,122,.35)}
 .tok{font-size:18px;padding:6px 12px}
 @media (max-height:700px){.flip{height:clamp(200px,38dvh,300px)}.face .w{font-size:32px}.face.front .w{font-size:26px}}
 @media (min-width:560px){.flip{height:340px}}
