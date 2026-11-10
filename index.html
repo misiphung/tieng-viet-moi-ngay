@@ -69,7 +69,6 @@ h2{font:700 13px var(--body);letter-spacing:.06em;text-transform:uppercase;color
 .big div{flex:1}
 .num{font:400 34px/1 var(--display);font-variant-numeric:tabular-nums}
 .lbl{font-size:13px;color:var(--muted);margin-top:4px}
-.stripe{height:5px;border-radius:99px;background:linear-gradient(90deg,var(--accent) 0 33%,var(--line) 33% 66%,var(--rouge) 66%);opacity:.9}
 .wk{display:flex;flex-direction:column;gap:9px;text-align:left;width:100%;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px}
 .wk.now{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
 .wk b{font-size:17px}
@@ -592,7 +591,6 @@ function homeView(){
       ${seen?`<button class="btn ghost" data-act="free">Frei üben</button>`:''}</div>`;
   }
   return `
-  <div class="stripe" aria-hidden="true"></div>
   <header style="display:flex;flex-direction:column;gap:6px">
     <h1>Xin chào!</h1>
     <p class="sub">Woche ${cw} von 7 · ${esc(wk.t)}</p>
